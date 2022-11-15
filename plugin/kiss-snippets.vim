@@ -96,13 +96,23 @@ endfunction
 function! KsComplete(A, C, L) abort
 	let l:m = match(a:C, "\\.")
 	if l:m != -1
-		let sF = trim(a:C, ".", 2)
+		let c  = []
+		let sF = get(split(a:C, "\\."), 0)
 		let sC = KsListSC(sF)
-		let n  = KsSnipNames(sC)
-		let c = []
-		for s in n
-			call add(c, sF.".".s)
-		endfor
+		let sN = KsSnipNames(sC)
+		let dS = get(split(a:C, "\\."), 1)
+		if 	dS != "0"
+			for n in sN
+				let m = match( n, dS)
+				if m != -1
+					call add(c, sF.".".n)
+				endif
+			endfor
+		else
+			for n in sN
+				call add(c, sF.".".n)
+			endfor
+		endif
 	else
 		let c = []
 		let aSF = KsListSF()

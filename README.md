@@ -10,11 +10,9 @@ Because other plugins are too featureful and in some cases even slow.
 
 1) Add KISS Snippets (or kissnips) using your favorite plugin manager, for `vim-plug` it will look like this:
 
-	call plug#begin()
-	
+	`call plug#begin()
 	Plug xeannedark/kiss-snippets
-
-	call plug#end()
+	call plug#end()`
 
 2) Add this line to your .vimrc/init.vim:
 

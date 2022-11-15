@@ -4,7 +4,7 @@ The most minimal kind of sane approach to snippets!
 
 ## Why?
 
-Because other plugins are too featureful and in some cases even slow.
+Because other plugins are too featureful! Who needs those anyways?
 
 ## How?
 

@@ -26,9 +26,9 @@ Replace <foo> with your preferred keymapping, such as <C-s> for "Ctrl-s".
 
 Using this format
 
-`snippet nameofsnippet
-	snippet content
-endsnippet`
+`snippet nameofsnippet`
+	`snippet content`
+`endsnippet`
 
 Add some snippets to a ".snippets" file, save them, open any document with vim/nvim and in normal mode hit your keymapping, hit tab and enjoy fuzzy completion!
 

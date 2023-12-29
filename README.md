@@ -22,7 +22,7 @@ call plug#end()
 
 `:nnoremap <foo> KISSnippets`
 
-Replace <foo> with your preferred keymapping, such as <C-s> for "Ctrl-s".
+Replace \<foo\> with your preferred keymapping, such as \<C-s\> for "Ctrl-s".
 
 3) Get some snippets!
 
